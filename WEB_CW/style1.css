@@ -1,0 +1,497 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+body {
+  background-color: #222;
+}
+
+#head{
+	margin-top:150px;
+}
+
+#quizDiv {
+	margin-left:30%;
+	width:500px;
+	height:500px;
+	background: rgba(0,0,0, 0.2);
+}
+
+#plate {
+  width: 465px;
+  margin: 5% auto;
+}
+
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.text1 {
+  font-size: 60px;
+}
+.text2 {
+  font-size: 160px;
+}
+
+#para {
+	font-family:Agency FB;
+	font-size:25px;
+}
+
+#resultsHead{
+	color:#fff;
+	text-align:center;
+	font-family:agency fb;
+}
+
+p{
+	text-align:center;
+	margin-top:60px;
+	font-family:cursive;
+	color:#fff;
+}
+
+#quizHolder{
+	background: rgba(0,0,0, 0.5);
+	text-align:center;
+	width:600px;
+	height:400px;
+	margin:60px auto;
+	border-radius: 10px;
+	padding:15px;
+}
+
+#results{
+	text-align:center;
+	width:600px;
+	height:400px;
+	margin:60px auto;
+	border-radius: 10px;
+	padding:15px;
+}
+
+#q{	
+	font-family: agency fb;
+	font-size:20px;
+	font-weight:10px;
+	margin:18px;
+	color:#000;
+}
+
+#questionHolder{
+	padding:1px;
+	background-color:#08e8de;
+	height:60px;
+	border-radius:10px;
+	color:#000;
+	font-family:agency fb;
+	font-weight:550;
+	font-size:20px
+	
+}
+
+#answers{
+	width:100%;
+	padding:0px;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+}
+
+.answer{
+	background-color:#32a9df;
+	width: 47%;
+	float:left;
+	padding:15px;
+	border-radius:8px;
+	margin-top:35px;
+	color:#000;
+	font-size:20px;
+	font-family:agency fb;
+	border: none;
+	letter-spacing:1px;
+}
+
+.answer:hover{
+	color: #08e8de !important;
+	transition: all 0.3s ease 0s;
+}
+
+#timerHolder{
+	margin-top:30px;
+	position:absolute;
+	color:white;
+	top:53.17%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:50px;
+	width:100px;
+	border-color:white;
+	border-width:2px;
+	border-style:solid;
+	border-radius:8px%;
+}
+
+#timer{
+	
+	margin-top:15px;
+	font-family:Girassol, cursive;
+}
+
+#startbtn{
+	border: none;
+	background: #08e8de;
+	color: #000 !important;
+	font-weight: 200;
+	font-size:15px;
+	padding: 20px;
+	padding-left:33.5px;
+	padding-right:32.5px;
+	margin-left:1px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+}
+
+#startbtn:hover {
+	padding-left:36.5px;
+	padding-right:33.5px;
+	color: #08e8de !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	background: black;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-o-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
+
+#nextbtn{
+	margin-top:30px;
+	position:absolute;
+	top:48.5%;
+	left:59.20%;
+	color: white !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 23px;
+	border: none;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+	background:#003366;
+}
+
+#nextbtn:hover{
+	color: #ffffff !important;
+	background: #f6b93b;
+	border-color: #f6b93b !important;
+	transition: all 0.4s ease 0s;	
+	
+}
+#qbtn{
+	margin-top:30px;
+	position:absolute;
+	top:48.5%;
+	left:35.5%;
+	color: white !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 23px;
+	padding-left:25px;
+	padding-right:25px;
+	border: none;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+	background:#003366;
+}
+
+#qbtn:hover{
+	color: #ffffff !important;
+	background: #ff3333;
+	border-color: #ff3333 !important;
+	transition: all 0.4s ease 0s;	
+}	
+
+#resultbtn{
+	margin-top:30px;
+	position:absolute;
+	top:48.5%;
+	left:58.5%;
+	color: white !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 23px;
+	border: none;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+	background:#003366;
+}
+
+#resultbtn:hover{
+	color: #ffffff !important;
+	background: #00cc66;
+	border-color: #4dff4d !important;
+	transition: all 0.4s ease 0s;	
+}
+
+
+#imgdev {
+	
+}
+
+
+#img1 {
+	position:absolute;
+	width:400px;
+	height:550px;
+	top:128px;
+	left:250px;
+	background-color:white;
+	
+}
+
+#imgdicrpt1div {
+	backdrop-filter: blur(40px);
+	position:absolute;
+	width:610px;
+	height:400px;
+	top:35px;
+	right:35px;
+	background-color:black;
+	opacity: 1;
+	backdrop-filter: blur(20px);
+	color:white;
+	font-size:20px;
+	transition: all 1s ease 0s;
+}
+
+#imgdicrpt1div #nameMain{
+	transition: all 1s ease 0s;
+}
+#imgdicrpt2div #nameMain{
+	transition: all 1s ease 0s;
+}
+#imgdicrpt3div #nameMain{
+	transition: all 1s ease 0s;
+}
+#imgdicrpt4div #nameMain{
+	transition: all 1s ease 0s;
+}
+
+#imgdicrpt1 {
+	position:absolute;
+	width:1200px;
+	height:475px;
+	top:165px;
+	left:180px;
+	background-color:#079A93;
+	opacity: 0.5;
+	backdrop-filter: blur(20px);
+	
+}
+#imgdicrpt1div:hover{
+	background-color:transparent;
+	transition:all 1s ease 0s;
+}
+#imgdicrpt2div:hover{
+	background-color:transparent;
+	transition:all 1s;
+}
+
+#imgdicrpt3div:hover{
+	background-color:transparent;
+	transition:all 1s;
+}
+#imgdicrpt4div:hover{
+	background-color:transparent;
+	transition:all 1s;
+}
+
+#img2 {
+	position:absolute;
+	width:400px;
+	height:550px;
+	top:773px;
+	right:225px;
+	background-color:white;
+	
+}
+
+#imgdicrpt2div {
+	position:absolute;
+	width:610px;
+	height:400px;
+	top:35px;
+	left:35px;
+	background-color:black;
+	opacity: 1;
+	backdrop-filter: blur(20px);
+	color:white;
+	font-size:20px;
+	transition: all 1s ease 0s;
+}
+
+#imgdicrpt2 {
+	position:absolute;
+	width:1200px;
+	height:475px;
+	top:810px;
+	left:180px;
+	background-color:#079A93;
+	opacity: 0.5;
+	backdrop-filter: blur(20px);
+}
+
+
+#img3 {
+	position:absolute;
+	width:400px;
+	height:550px;
+	top:1402px;
+	left:250px;
+	background-color:white;
+	
+}
+
+#imgdicrpt3div {
+	position:absolute;
+	width:610px;
+	height:400px;
+	top:35px;
+	right:35px;
+	background-color:black;
+	opacity: 1;
+	backdrop-filter: blur(20px);
+	color:white;
+	font-size:20px;
+	transition: all 1s ease 0s;
+}
+
+#imgdicrpt3 {
+	position:absolute;
+	width:1200px;
+	height:475px;
+	top:1440px;
+	left:180px;
+	background-color:#079A93;
+	opacity: 0.5;
+	backdrop-filter: blur(20px);
+}
+
+
+#img4 {
+	position:absolute;
+	width:400px;
+	height:530px;
+	top:2050px;
+	right:250px;
+	background-color:white;
+	
+}
+
+#imgdicrpt4div {
+	position:absolute;
+	width:610px;
+	height:400px;
+	top:40px;
+	left:40px;
+	background-color:black;
+	opacity: 1;
+	color:white;
+	font-size:20px;
+	backdrop-filter: blur(20px);
+	transition: all 1s ease 0s;
+}
+
+#imgdicrpt4 {
+	position:absolute;
+	width:1200px;
+	height:475px;
+	top:2090px;
+	left:180px;
+	background-color:#079A93;
+	opacity: 0.5;
+	backdrop-filter: blur(20px);
+}
+
+#content{
+	display:block;
+	cursor:pointer;
+}
+
+#overlay{
+	opacity:0;
+}
+
+#nameMain{
+	font-family:agency fb;
+	font-size:30px;
+}
+ #name1{
+	text-align:left;
+	font-family: agency fb;
+	color:white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color:#079A93;
+	font-size:25px;
+ }
+
+#imgdicrpt1div:hover #nameMain{
+	color:red;
+	transition: all 1s ease 0s;
+	letter-spacing:2px;
+	
+}
+#imgdicrpt2div:hover #nameMain{
+	color:red;
+	transition: all 1s ease 0s;
+	letter-spacing:2px;
+}
+#imgdicrpt3div:hover #nameMain{
+	color:red;
+	transition: all 1s ease 0s;
+	letter-spacing:2px;
+}
+#imgdicrpt4div:hover #nameMain{
+	color:red;
+	transition: all 1s ease 0s;
+	letter-spacing:2px;
+}
+
+#imgdicrpt1div:hover #overlay{
+	opacity:1;
+	transition: all 0.4s ease 0.5s;	
+}
+
+#imgdicrpt2div:hover #overlay{
+	opacity:1;
+	transition: all 0.4s ease 0.5s;	
+}
+#imgdicrpt3div:hover #overlay{
+	opacity:1;
+	transition: all 0.4s ease 0.5s;	
+}
+#imgdicrpt4div:hover #overlay{
+	opacity:1;
+	transition: all 0.4s ease 0.5s;	
+}
+
+	

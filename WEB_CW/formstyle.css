@@ -1,0 +1,112 @@
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto&display=swap');
+    #mainformbody{background-image: linear-gradient(to right, rgb(192, 192, 192) , rgb(27, 100, 143));}
+    *{  
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        
+        }
+    .wrap{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background: rgba(8,232,222, 0.3);
+        border: 2px solid black; 
+        border-radius: 6px;
+        width: 100%;
+        max-width: 570px;
+    }
+    #formheading{
+        font-family: agency fb;
+        font-style: normal;
+        font-size: 45px;
+        text-align: center;
+        margin-top: 40px;
+        color:black;
+    }
+        
+     
+    
+    .myformlabels{
+        display: block;
+        padding: 5px;
+        text-transform: none;
+        font-family: agency fb;
+        font-size: 25px;
+        color:white;
+		font-weight:500;
+    }
+    #usercomment{
+        width: 20%;
+    }
+    #error{
+        margin: auto;
+        height: 5%;
+        padding: 10px 80px;
+        background-color:#08e8de;
+        font-family:agency fb;
+    }
+
+    .subform{
+        width: 85%;
+        text-align:center;
+        margin: auto;
+        height: 70%;
+        padding: 10px 20px;
+        margin-top: -7px;
+        
+        }
+    .inputfield{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 85%;
+        height: 8%;
+        border-radius: 4px;
+    
+    }
+    #comm{
+        height: 52%;
+        width: 95%;
+        padding: 5px;}
+    #usercomments{
+        height: 10%;;
+    }
+    .entries{
+        padding: 10px;
+    }
+    #subbut{
+        border: 0;
+        background: black;
+        padding: 10px;
+        color: white;
+        width: 25%;
+        height: 15%;
+        text-transform: uppercase;
+        border-radius: 12px;
+		border-style:solid;
+		border-width:2px;
+		border-color:white;
+    }
+	#subbut:hover {
+		color:#000;
+        border-color:#000;
+        background-color: #08e8de;
+        font-weight: 700;
+		transition:ease .4s;
+	}
+	
+    #rating{
+        width: 45%;
+        height: 5%;}
+    #popbox{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        padding: 30px 20px 20px 20px;
+    }
+
+input, textarea, select {
+	background-color:black;
+	color:white;
+}

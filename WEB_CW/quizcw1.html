@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="csscw%20(1).css">
+<link rel="stylesheet" type="text/css" href="csscw.css">
+<title>Quiz Game</title>
+
+<div id="head">
+	<div id="plate">
+	  <p class="shadow text1">MUSIC</p>
+	  <p class="shadow text2">QUIZ</p>
+	  <p id="para">WIN THIS MUSIC QUIZ AND GET A PREMIUM SUBSCRIPTION FOR FREE</p>
+	</div>
+	<div align="center">
+		<input type="button" name="start" value="START" onclick="quizCall()" id="startbtn" class="startb+tn" >
+	</div>
+	<div id="results">
+		<h2 id="resultsHead">R E S U L T S</h2>
+		<p id="result"></p>
+		<p id="time"></p>
+	</div>
+</div>
+</head>
+
+<body background='guitartilepic.jpg'>
+
+<div id="quizHolder">
+	<div id="questionHolder">
+		<p id="q"></p>
+	</div>
+	<div id="answers">
+		<input type="button" name="answer" value="" id="ans1" class="answer">
+		<input type="button" name="answer" value="" id="ans2" class="answer">
+		<input type="button" name="answer" value="" id="ans3" class="answer">
+		<input type="button" name="answer" value="" id="ans4" class="answer">
+	</div>
+	<div id="timerHolder">
+		<div id="timer"></div>
+	</div>
+	<div id="next">
+		<input type="button" name="next" value="NEXT" id="nextbtn" class="nextbtn">
+	</div>
+	<input type="button" name="quit" value="QUIT" onclick="quitQuiz()" id="qbtn" class="qbtn">
+	<input type="button" name="results" value="RESULTS" id="resultbtn" class="resultbtn">
+
+	<audio id="ding">
+		<source src="ding.mp3" type="audio/mpeg">
+	</audio>
+	
+	<div id="timesup"></div>
+</div>
+
+<script type="text/javascript"> 
+	document.getElementById('results').style.display='none'
+	document.getElementById('quizHolder').style.display='none'
+	document.getElementById('resultsHead').style.display='none'
+	document.getElementById('resultbtn').style.display='none'
+	document.getElementById('nextbtn').style.display='none';
+	document.getElementById('qbtn').style.display='none';
+	document.getElementById('quizHolder').style.display='none';
+	document.getElementById('nextbtn').disabled = true;
+	function quizCall(){
+		document.getElementById('quizHolder').style.display='block';
+		window.correctCount = 0;
+		window.incorrectCount = 0;
+		document.getElementById('head').style.display='none';
+		document.getElementById('startbtn').style.display='none';
+		document.getElementById('nextbtn').style.display='block';
+		document.getElementById('qbtn').style.display='block';
+		document.getElementById('q').innerHTML="Whose 2013 world tour was called ‘The Mrs Carter Show’?";
+		document.getElementById('ans1').value="Ariana"
+		document.getElementById('ans2').value="Beyonce"
+		document.getElementById('ans3').value="Selena"
+		document.getElementById('ans4').value="Adele"
+		
+	document.getElementById('ans2').onclick=correctQ1;
+	function correctQ1(){
+		correctCount++;
+		document.getElementById('ans2').style.backgroundColor="#00cc66";
+		document.getElementById('ans1').disabled = true;
+		document.getElementById('ans3').disabled = true;
+		document.getElementById('ans4').disabled = true;
+		document.getElementById('nextbtn').disabled = false;
+		}
+		
+		document.getElementById('ans1').onclick=incorrectQ1;
+		document.getElementById('ans3').onclick=incorrectQ1; 
+		document.getElementById('ans4').onclick=incorrectQ1;
+		
+		function incorrectQ1(){
+			incorrectCount--;
+			document.getElementById(this.id).style.backgroundColor="#E53C3C";
+			document.getElementById('ans2').style.backgroundColor="#00cc66";
+			document.getElementById('nextbtn').disabled = false;
+		}
+		
+		document.getElementById('nextbtn').disabled = true;
+		document.getElementById('nextbtn').onclick=Q2;
+		function Q2(){
+			document.getElementById('ans1').disabled = false;
+			document.getElementById('ans3').disabled = false;
+			document.getElementById('ans4').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('q').innerHTML="What was Madonna’s first UK top ten single?";
+			document.getElementById('ans1').value="Holiday"
+			document.getElementById('ans2').value="Burning Up"
+			document.getElementById('ans3').value="Everybody"
+			document.getElementById('ans4').value="Lucky Star"
+			
+			document.getElementById('ans1').onclick=correctQ2;
+			function correctQ2(){
+				correctCount++;
+				document.getElementById('ans1').style.backgroundColor="#00cc66";
+				document.getElementById('ans2').disabled = true;
+				document.getElementById('ans3').disabled = true;
+				document.getElementById('ans4').disabled = true;
+				document.getElementById('nextbtn').disabled = false;
+						
+			}
+			document.getElementById('ans2').onclick=incorrectQ2;
+			document.getElementById('ans3').onclick=incorrectQ2; 
+			document.getElementById('ans4').onclick=incorrectQ2;
+			
+			function incorrectQ2(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans1').style.backgroundColor="#00cc66";
+				document.getElementById('nextbtn').disabled = false;
+			}
+			
+		document.getElementById('nextbtn').disabled = true;	
+		document.getElementById('nextbtn').onclick=Q3;
+		function Q3(){
+			document.getElementById('ans2').disabled = false;
+			document.getElementById('ans3').disabled = false;
+			document.getElementById('ans4').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('q').innerHTML="Stewart Copeland was the drummer with which band?";
+			document.getElementById('ans1').value="U2"
+			document.getElementById('ans2').value="Bon Jovi"
+			document.getElementById('ans3').value="The Police"
+			document.getElementById('ans4').value="Maroon 5"
+			
+			document.getElementById('ans3').onclick=correctQ3;
+			function correctQ3(){
+				correctCount++;
+				document.getElementById('ans3').style.backgroundColor="#00cc66";
+				document.getElementById('ans1').disabled = true;
+				document.getElementById('ans2').disabled = true;
+				document.getElementById('ans4').disabled = true;
+				document.getElementById('nextbtn').disabled = false;
+			}
+			document.getElementById('ans2').onclick=incorrectQ3;
+			document.getElementById('ans1').onclick=incorrectQ3; 
+			document.getElementById('ans4').onclick=incorrectQ3;
+			
+			function incorrectQ3(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans3').style.backgroundColor="#00cc66";
+				document.getElementById('nextbtn').disabled = false;
+			}
+		
+		document.getElementById('nextbtn').disabled = true;
+		document.getElementById('nextbtn').onclick=Q4;
+		function Q4(){
+			document.getElementById('ans1').disabled = false;
+			document.getElementById('ans2').disabled = false;
+			document.getElementById('ans4').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('q').innerHTML="What is the better known stage name of Robyn Fenty?";
+			document.getElementById('ans1').value="Beyonce"
+			document.getElementById('ans2').value="Cardi B"
+			document.getElementById('ans3').value="Niki Minaj"
+			document.getElementById('ans4').value="Rihanna"
+			
+			document.getElementById('ans4').onclick=correctQ4;
+			function correctQ4(){
+				correctCount++;
+				document.getElementById('ans4').style.backgroundColor="#00cc66";
+				document.getElementById('ans1').disabled = true;
+				document.getElementById('ans2').disabled = true;
+				document.getElementById('ans3').disabled = true;
+				document.getElementById('nextbtn').disabled = false;				
+			}
+			document.getElementById('ans2').onclick=incorrectQ4;
+			document.getElementById('ans1').onclick=incorrectQ4; 
+			document.getElementById('ans3').onclick=incorrectQ4;	
+			
+			function incorrectQ4(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans4').style.backgroundColor="#00cc66";
+				document.getElementById('nextbtn').disabled = false;
+			}
+		
+		document.getElementById('nextbtn').disabled = true;
+		document.getElementById('nextbtn').onclick=Q5;
+		function Q5(){
+			document.getElementById('ans1').disabled = false;
+			document.getElementById('ans3').disabled = false;
+			document.getElementById('ans2').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('q').innerHTML="Which singer was known as Little Miss Dynamite?";
+			document.getElementById('ans1').value="Taylor Swift"
+			document.getElementById('ans2').value="Brenda Lee"
+			document.getElementById('ans3').value="Mariah Carey"
+			document.getElementById('ans4').value="Lady Gaga"
+			
+			document.getElementById('ans2').onclick=correctQ5;
+			function correctQ5(){
+				correctCount++;
+				document.getElementById('ans2').style.backgroundColor="#00cc66";
+				document.getElementById('ans1').disabled = true;
+				document.getElementById('ans3').disabled = true;
+				document.getElementById('ans4').disabled = true;	
+				document.getElementById('nextbtn').disabled = false;
+			}
+			document.getElementById('ans4').onclick=incorrectQ5;
+			document.getElementById('ans1').onclick=incorrectQ5; 
+			document.getElementById('ans3').onclick=incorrectQ5;	
+			
+			function incorrectQ5(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans2').style.backgroundColor="#00cc66";
+				document.getElementById('nextbtn').disabled = false;
+			}
+		
+		document.getElementById('nextbtn').disabled = true;
+		document.getElementById('nextbtn').onclick=Q6;
+		function Q6(){
+			document.getElementById('ans1').disabled = false;
+			document.getElementById('ans3').disabled = false;
+			document.getElementById('ans4').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('questionHolder').style.height="80px";
+			document.getElementById('q').innerHTML="In 2012, Psy got the record for most YouTube views ever, passing what artist who previously held the record?";
+			document.getElementById('ans1').value="Shawn Mendes"
+			document.getElementById('ans2').value="Justin Bieber"
+			document.getElementById('ans3').value="Ed Sheeran"
+			document.getElementById('ans4').value="John Legend"
+			
+			document.getElementById('ans2').onclick=correctQ6;
+			function correctQ6(){
+				correctCount++;
+				document.getElementById('ans2').style.backgroundColor="#00cc66";
+				document.getElementById('ans1').disabled = true;
+				document.getElementById('ans3').disabled = true;
+				document.getElementById('ans4').disabled = true;
+				document.getElementById('nextbtn').disabled = false;
+			}
+			document.getElementById('ans4').onclick=incorrectQ6;
+			document.getElementById('ans1').onclick=incorrectQ6; 
+			document.getElementById('ans3').onclick=incorrectQ6;	
+			
+			function incorrectQ6(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans2').style.backgroundColor="#00cc66";
+				document.getElementById('nextbtn').disabled = false;
+			}
+		
+		document.getElementById('nextbtn').disabled = true;
+		document.getElementById('nextbtn').onclick=Q7;
+		function Q7(){
+			document.getElementById('ans1').disabled = false;
+			document.getElementById('ans3').disabled = false;
+			document.getElementById('ans4').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('questionHolder').style.height="60px";
+			document.getElementById('q').innerHTML="London born singer Miss Adkins is better known by what name?";
+			document.getElementById('ans1').value="Adele"
+			document.getElementById('ans2').value="Selena"
+			document.getElementById('ans3').value="Jessie J"
+			document.getElementById('ans4').value="Lily Allen"
+			
+			document.getElementById('ans1').onclick=correctQ7;
+			function correctQ7(){
+				correctCount++;
+				document.getElementById('ans1').style.backgroundColor="#00cc66";
+				document.getElementById('ans3').disabled = true;
+				document.getElementById('ans2').disabled = true;
+				document.getElementById('ans4').disabled = true;
+				document.getElementById('nextbtn').disabled = false;
+			}
+			document.getElementById('ans4').onclick=incorrectQ7;
+			document.getElementById('ans2').onclick=incorrectQ7; 
+			document.getElementById('ans3').onclick=incorrectQ7;	
+			
+			function incorrectQ7(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans1').style.backgroundColor="#00cc66";
+				document.getElementById('nextbtn').disabled = false;
+			}	
+		
+		document.getElementById('nextbtn').disabled = true;
+		document.getElementById('nextbtn').onclick=Q8;
+		function Q8(){
+			document.getElementById('ans2').disabled = false;
+			document.getElementById('ans3').disabled = false;
+			document.getElementById('ans4').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('questionHolder').style.height="70px";
+			document.getElementById('q').innerHTML="The Beatles released their first UK single 'Love Me Do' in what year?";
+			document.getElementById('ans1').value="1987"
+			document.getElementById('ans2').value="1976"
+			document.getElementById('ans3').value="1962"
+			document.getElementById('ans4').value="1988"
+			
+			document.getElementById('ans3').onclick=correctQ8;
+			function correctQ8(){
+				correctCount++;
+				document.getElementById('ans3').style.backgroundColor="#00cc66";
+				document.getElementById('ans1').disabled = true;
+				document.getElementById('ans2').disabled = true;
+				document.getElementById('ans4').disabled = true;
+				document.getElementById('nextbtn').disabled = false;
+			}
+			document.getElementById('ans4').onclick=incorrectQ8;
+			document.getElementById('ans2').onclick=incorrectQ8; 
+			document.getElementById('ans1').onclick=incorrectQ8;	
+			
+			function incorrectQ8(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans3').style.backgroundColor="#00cc66";
+				document.getElementById('nextbtn').disabled = false;
+			}		
+		
+		document.getElementById('nextbtn').disabled = true;
+		document.getElementById('nextbtn').onclick=Q9;
+		function Q9(){
+			document.getElementById('ans1').disabled = false;
+			document.getElementById('ans2').disabled = false;
+			document.getElementById('ans4').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('questionHolder').style.height="90px";
+			document.getElementById('q').innerHTML="Ed Sheeran kicked off 2018 with a number track said to be inspired by a visit to James Blunt's in Ibiza. What was the title of the song?";
+			document.getElementById('ans1').value="Perfect"
+			document.getElementById('ans2').value="Shape of You"
+			document.getElementById('ans3').value="Photograph"
+			document.getElementById('ans4').value="Galway Girl"
+			
+			document.getElementById('ans1').onclick=correctQ9;
+			function correctQ9(){
+				correctCount++;
+				document.getElementById('ans1').style.backgroundColor="#00cc66";
+				document.getElementById('ans3').disabled = true;
+				document.getElementById('ans2').disabled = true;
+				document.getElementById('ans4').disabled = true;
+				document.getElementById('nextbtn').disabled = false;
+			}
+			document.getElementById('ans4').onclick=incorrectQ9;
+			document.getElementById('ans2').onclick=incorrectQ9; 
+			document.getElementById('ans3').onclick=incorrectQ9;	
+			
+			function incorrectQ9(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans1').style.backgroundColor="#00cc66";
+				document.getElementById('nextbtn').disabled = false;
+			}		
+		
+		document.getElementById('nextbtn').disabled = true;
+		document.getElementById('nextbtn').onclick=Q10;
+		function Q10(){
+			document.getElementById('ans2').disabled = false;
+			document.getElementById('ans3').disabled = false;
+			document.getElementById('ans4').disabled = false;
+			document.getElementById('ans1').style.backgroundColor="#32a9df";
+			document.getElementById('ans2').style.backgroundColor="#32a9df";
+			document.getElementById('ans3').style.backgroundColor="#32a9df";
+			document.getElementById('ans4').style.backgroundColor="#32a9df";
+			document.getElementById('questionHolder').style.height="80px";
+			document.getElementById('q').innerHTML="'Man in the Woods' is the first studio album release in five years by which former N-Sync band member?";
+			document.getElementById('ans1').value="Joey Fatone"
+			document.getElementById('ans2').value="Lance Bass"
+			document.getElementById('ans3').value="Justin Timberlake"
+			document.getElementById('ans4').value="JC Chasez"
+			
+			document.getElementById('ans3').onclick=correctQ10;
+			function correctQ10(){
+				correctCount++;
+				document.getElementById('ans3').style.backgroundColor="#00cc66";
+				document.getElementById('ans1').disabled = true;
+				document.getElementById('ans2').disabled = true;
+				document.getElementById('ans4').disabled = true;
+				document.getElementById('resultbtn').style.display='block';
+				document.getElementById('nextbtn').style.display='none';
+				clearInterval(interval);
+			}
+			document.getElementById('ans4').onclick=incorrectQ10;
+			document.getElementById('ans2').onclick=incorrectQ10; 
+			document.getElementById('ans1').onclick=incorrectQ10;	
+			
+			function incorrectQ10(){
+				incorrectCount--;
+				document.getElementById(this.id).style.backgroundColor="#E53C3C";
+				document.getElementById('ans3').style.backgroundColor="#00cc66";
+				document.getElementById('resultbtn').style.display='block'
+				document.getElementById('nextbtn').style.display='none';
+				clearInterval(interval);
+			}			
+			
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+	
+	window.counter = 0;
+	var timeleft = 120;
+	var timer = document.getElementById('timer');
+	timer.innerHTML=conSec(timeleft -counter);
+	
+	function conSec(s){
+		var min = Math.floor(s/60);
+		var sec = s%60;
+		return ("0" + min + "m ").slice(-3) + ': ' + ("0" + sec + "s").slice(-3); 
+	}
+	
+	window.interval = setInterval(timeIt, 1000);
+	
+	function timeIt(){
+		counter++;
+		timer.innerHTML=conSec(timeleft -counter);
+		if(counter == timeleft){
+			var x = document.getElementById("ding");
+			x.play();
+			clearInterval(interval);
+			document.getElementById('ans1').disabled = true;
+			document.getElementById('ans2').disabled = true;
+			document.getElementById('ans3').disabled = true;
+			document.getElementById('ans4').disabled = true;
+			document.getElementById('nextbtn').disabled = true;
+			document.getElementById('resultbtn').style.display='block'
+		}
+	}
+}
+
+	function conSec(s){
+		var min = Math.floor(s/60);
+		var sec = s%60;;
+		return ("0" + min + " minutes ").slice(-11) + 'and ' + ("0" + sec + " seconds").slice(-10); 
+	}
+	
+	document.getElementById("resultbtn").onclick=results;
+	function results(){
+		var x = window.correctCount;
+		var y = window.incorrectCount;
+		var correctScore = x*2;
+		var incorrectScore = y;
+		
+		var score = correctScore + incorrectScore;
+		
+		document.getElementById('plate').style.display='none';
+		document.getElementById('nextbtn').style.display='none';
+		document.getElementById('head').style.display='block';
+		document.getElementById('results').style.display='block'
+		document.getElementById('qbtn').style.display='none';
+		document.getElementById('quizHolder').style.display='none';
+		document.getElementById('resultsHead').style.display='block'
+		document.getElementById("result").innerHTML="Score : "+score;
+		
+		if(score >= 15){
+			document.getElementById('results').style.backgroundColor="#00cc66";
+		}
+		
+		else if(score < 15 && score >= 5 ){
+			document.getElementById('results').style.backgroundColor="#ffa64d";
+		}
+		
+		else{
+			document.getElementById('results').style.backgroundColor="#ff3333";
+		}
+		
+		document.getElementById("time").innerHTML="You took, "+conSec(counter)+" to finish the quiz.";
+	}
+	
+	function quitQuiz(){
+		//window.location.reload();
+		clearInterval(window.interval);
+		document.getElementById('quizHolder').style.display='none';
+		document.getElementById('resultbtn').style.display='none'
+		document.getElementById('ans1').style.backgroundColor="#32a9df";
+		document.getElementById('ans2').style.backgroundColor="#32a9df";
+		document.getElementById('ans3').style.backgroundColor="#32a9df";
+		document.getElementById('ans4').style.backgroundColor="#32a9df";
+		document.getElementById('ans1').disabled = false;
+		document.getElementById('ans2').disabled = false;
+		document.getElementById('ans3').disabled = false;
+		document.getElementById('ans4').disabled = false;
+		document.getElementById('startbtn').style.display='block';
+		document.getElementById('head').style.display='block';
+		document.getElementById('nextbtn').style.display='none';
+		document.getElementById('nextbtn').disabled = false;
+		document.getElementById('qbtn').style.display='none';
+	}	
+		
+</script>
+
+</body >                           
+
+</html> 

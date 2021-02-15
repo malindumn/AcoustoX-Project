@@ -1,0 +1,251 @@
+
+#sitemapDiv {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	top: 10px;
+}
+
+#sitemapP {
+	position:absolute;
+	width:160px;
+	height:210px;
+	top:130px;
+	left:670px;
+	z-index: 7;
+}
+
+#sitemapH {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:300px;
+	left:150px;
+}
+
+#sitemapS {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:300px;
+	left:350px;
+}
+
+#sitemapG {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:300px;
+	left:550px;
+}
+
+#sitemapSM {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:300px;
+	left:750px;
+}
+
+#sitemapArt {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:300px;
+	left:950px;
+}
+
+#sitemapA {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:300px;
+	left:1150px;
+}
+
+#sitemapR {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:580px;
+	left:100px;
+}
+
+#sitemapL {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:580px;
+	left:100px;
+}
+
+#sitemapQ {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:580px;
+	left:300px;
+}
+
+#sitemapDM {
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:580px;
+	left:530px;
+}
+
+#sitemapSD{
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:580px;
+	left:730px;
+}
+
+#sitemapEM{
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:580px;
+	left:930px;
+}
+
+#sitemapHAL{
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:580px;
+	left:1130px;
+}
+
+#sitemapLUXMAN{
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:880px;
+	left:1130px;
+}
+
+#sitemapKAV{
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:880px;
+	left:930px;
+}
+
+#sitemapMAL{
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:880px;
+	left:730px;
+}
+
+#sitemapNAB{
+	position:absolute;
+	width:160px;
+	height:150px;
+	top:880px;
+	left:530px;
+}
+
+#rect1 {
+	position:absolute;
+	fill:WHITE;
+	stroke:#08e8de;
+	stroke-width:3;
+	fill-opacity:0.2;
+	
+}
+
+#rectin {
+	fill:BLACK;
+	fill-opacity:0.6;
+
+}
+
+.rectinfill {
+	fill: #079A93;
+}
+
+#textsvg{
+	font-family:agency fb;
+	fill:#08e8de;
+	font-size:40px;
+	
+}
+
+#textsvgQ{
+	font-family:agency fb;
+	fill:#08e8de;
+	font-size:30px;
+	
+}
+
+
+#svglineh {
+	width:20px;
+	height:25px;
+	position:fixed;
+	bottom:5px;
+	right:285px;
+	z-index:1;
+}
+
+#socialbutton1h {
+	position:fixed;
+	bottom:20px;
+	right:25px;
+	z-index: 1;
+}
+
+#socialbutton2h {
+	position:fixed;
+	bottom:20px;
+	right:65px;
+	z-index: 1;
+}
+
+#socialbutton3h {
+	position:fixed;
+	bottom:20px;
+	right:105px;
+	z-index: 1;
+}
+
+#socialbutton4h {
+	position:fixed;
+	bottom:20px;
+	right:145px;
+	z-index: 1;
+}
+
+#socialbutton5h {
+	position:absolute;
+	top:15px;
+	right:22px;
+	z-index: 1;
+}
+
+#socialbuttonpic1 {
+	width:28px;
+	height:auto;
+	filter: brightness(90%);
+}
+
+#socialbuttonpic1:hover {
+	filter: brightness(200%);
+}
+
+.socialbuttonpic {
+	width:22px;
+	height:auto;
+	filter: brightness(90%);
+}
+
+.socialbuttonpic:hover {
+	filter: brightness(200%);
+}

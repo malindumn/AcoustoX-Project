@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart_kavindu.css" type="text/css">
+    <script src="cart_kavindu.js"></script>
+    <title>ACOUSTO X.com</title>
+    <link rel='stylesheet' type='text/css' href='csscw.css'>
+    <link rel='stylesheet' type='text/css' href='svg.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function goToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</head>
+
+<body>
+
+<div id='menu'>
+
+    <a href="HOME.html"><img src='skulllogo.png' id='menulogo'/></a>
+    <img src='acousto.png' id='acstlogo'/>
+    <img src='x.png' id='xlogo'/>
+    <ul>
+        <li class='mnu'><a href="HOME.html">HOME</a></li>
+        <li class='actvmnu'><a href="cart_kavindu.html">STORE</a></li>
+        <li class='mnu'><a href="GALLERY.html">GALLERY</a></li>
+        <li class='mnu'><a href="SITEMAP.html">SITEMAP</a></li>
+        <li class='mnu'><a href="ARTISTS.html">ARTISTS</a></li>
+        <li class='mnu'><a href="ABOUT.html">ABOUT</a></li>
+    </ul>
+</div>
+
+<div id='svgline'>
+    <svg height="210" width="500">
+        <line x1="0" y1="0" x2="0" y2="130" style="stroke:#08e8de;stroke-width:4;"/>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+</div>
+
+
+<a href='https://www.facebook.com/' target='blank'>
+    <div id='socialbutton1'>
+        <img src='facebooksvg.svg' class='socialbuttonpic'/>
+    </div>
+</a>
+
+<div id='socialbutton2'>
+    <a href='https://www.youtube.com/' target='blank'>
+        <img src='youtubesvg.svg' class='socialbuttonpic'/>
+    </a>
+</div>
+
+<div id='socialbutton3'>
+    <a href='https://www.twitter.com/' target='blank'>
+        <img src='twittersvg.svg' class='socialbuttonpic'/>
+    </a>
+</div>
+
+<div id='socialbutton4'>
+    <a href='https://www.instagram.com/' target='blank'>
+        <img src='instagramsvg.svg' class='socialbuttonpic'/>
+    </a>
+</div>
+<div id='socialbutton6'>
+    <span onclick="goToTop()">GO TO TOP</span>
+</div>
+    <div class="topic" style="color: #000d1a">STORE</div>
+    <div class="fontAdjust">
+        <button class="button" type="button" onclick="increase()" style="height: 40px; width: 30px; color: #000d1a">+</button>
+        <button class="button" type="button" onclick="usually()" style="height: 40px; width: 80px; color: #000d1a">Default</button>
+        <button class="button" type="button" onclick="decrease()" style="height: 40px; width: 30px; color: #000d1a">-</button>
+    </div>
+
+    <br>
+    <form class="formStyle">
+        <label> Name </label> <input type="text" id="textName" type="text" placeholder="E.g.: Marshall Mathers"> <br><br>
+        <label> Email&nbsp;&nbsp;&nbsp;</label> <input type="email" id="textEmail" type="text" placeholder="E.g.: example@example.com"> <br><br>
+        <label> Telephone Number </label> <input id="textTP" type="text" placeholder="E.g.: 07X XXX XXXX"> <br><br>
+
+        <button class="button" type="button" onclick="displayMessage()" style="color: #000d1a">Place Order</button>
+    </form>
+    <br>
+    <br>
+    <div class="saleContainer">
+        <div class="saleImage">
+            <img src="redt.jpg">
+        </div>
+
+        <div class="saleDetail">
+            <table>
+                <tr>
+                    <th>Merchandice Code</th>
+                    <td>001</td>
+                </tr>
+                <tr>
+                    <th>Info</th>
+                    <td>Unisex Cottton round neck T-Shirt</td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td>USD 30</td>
+                </tr>
+            </table>
+        </div>
+        <div class="saleQuantity">
+            <table>
+                <tr>
+                    <th>Number of quantity</th>
+                </tr>
+            </table>
+        </div>
+        <div class="saleInput">
+            <input id="textQty1" type="text" placeholder="E.g.: 1" value="0">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="saleContainer">
+        <div class="saleImage">
+            <img src="blackt.jpg">
+        </div>
+
+        <div class="saleDetail">
+            <table>
+                <tr>
+                    <th>Merchandice Code</th>
+                    <td>002</td>
+                </tr>
+                <tr>
+                    <th>Brand</th>
+                    <td>Unisex Cottton round neck T-Shirt</td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td>USD 30</td>
+                </tr>
+            </table>
+        </div>
+        <div class="saleQuantity">
+            <table>
+                <tr>
+                    <th>Number of quantity</th>
+                </tr>
+            </table>
+        </div>
+        <div class="saleInput">
+            <input id="textQty2" type="text" placeholder="E.g.: 1" value="0">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="saleContainer">
+        <div class="saleImage">
+            <img src="whitet.jpg">
+        </div>
+
+        <div class="saleDetail">
+            <table>
+                <tr>
+                    <th>Merchandice Code</th>
+                    <td>003</td>
+                </tr>
+                <tr>
+                    <th>Info</th>
+                    <td>Unisex Cottton round neck T-Shirt</td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td>USD 30</td>
+                </tr>
+            </table>
+        </div>
+        <div class="saleQuantity">
+            <table>
+                <tr>
+                    <th>Number of quantity</th>
+                </tr>
+            </table>
+        </div>
+        <div class="saleInput">
+            <input id="textQty3" type="text" placeholder="E.g.: 1" value="0">
+        </div>
+    </div>
+
+    <br><br>
+
+
+    </div>
+
+
+
+    <div class="footer" style="top: 1500px">
+        <div class="footerLeft">
+            <img src="logoac.png" style="height: 90px; width: auto; margin-top: 50px;margin-left: 90px">
+            <p class="slogan">THIS SITE BRINGS ARTIST, FANS AND VENUES TOGETHER,
+                FROM ALL OVER THE WORLD WITH ONE MAIN VISION TO PROMOTE MUSIC</p>
+
+            <p class="footerEditor">
+                PAGE EDITOR</p>
+            <a href="kavindu_page_editor.html" class="footerLinkEd" class="footerLink">
+                Kavindu Kavishka
+            </a>
+
+        </div>
+        <div class="footerMiddle">
+            <table class="footerTable">
+                <tr>
+                    <th class="footerTH">EXPLORE</th>
+                    <th class="footerTH"> VISIT</th>
+                    <th class="footerTH"> FOLLOW</th>
+                </tr>
+                <tr>
+                    <td class="footerTD"><a href="HOME.html" class="footerLink"> HOME</a></td>
+                    <td class="footerTD"> No.27 1ST Ln,</td>
+                    <td class="footerTD" class="footerLink"> INSTAGRAM</td>
+                </tr>
+                <tr>
+                    <td class="footerTD"><a href="cart_kavindu.html" class="footerLink"> STORE</a></td>
+                    <td class="footerTD"> PIRIVENA RD,</td>
+                    <td class="footerTD" class="footerLink"> TWITTER</td>
+                </tr>
+                <tr>
+                    <td class="footerTD"><a href="GALLERY.html" class="footerLink"> GALLERY</a></td>
+                    <td class="footerTD"> RATMALANA</td>
+                    <td class="footerTD" class="footerLink"> YOUTUBE</td>
+                </tr>
+                <tr>
+                    <td class="footerTD"><a href="SITEMAP.html" class="footerLink"> SITEMAP</a></td>
+                    <td class="footerTD"></td>
+                    <td class="footerTD" class="footerLink"> FACEBOOK</td>
+                </tr>
+                <tr>
+                    <td class="footerTD"><a href="ARTISTS.html" class="footerLink"> ARTISTS</a></td>
+                    <td class="footerTD"></td>
+                    <td class="footerTD" class="footerLink"></td>
+                </tr>
+                <tr>
+                    <td class="footerTD"><a href="ABOUT.html" class="footerLink"> ABOUT</a></td>
+                    <td class="footerTD"></td>
+                    <td class="footerTD" class="footerLink"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+
+</html>

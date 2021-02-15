@@ -1,0 +1,38 @@
+body {
+    background-image: url("PRESENTATION PAGE.jpg");
+    background-size: cover;
+}
+
+.header {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 70px;
+    background-color: black;
+    color: #08e8de;
+    font-family: "Agency FB";
+    font-weight: bolder;
+    padding: 60px;
+    opacity: 0.5;
+}
+
+table.table1 {
+    padding: 50px;
+    font-family: "Agency FB";
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse: separate;
+    margin: 0px auto;
+    background: rgba(29, 49, 58, 0.8);
+}
+
+.table1 th {
+    color: #000000;
+    background-color: #00ADAB;
+    padding: 0px 10px;
+    border-radius: 4px;
+}

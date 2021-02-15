@@ -1,0 +1,336 @@
+<html>
+<head>
+	<title>ACOUSTO X.com</title>
+	<link rel='stylesheet' type='text/css' href='csscw.css'>
+	<link rel='stylesheet' type='text/css' href='gallery.css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	<form>
+		<div id='wr'>
+			
+			<div id='a' >
+				<img src='home pic 2.jpg' width=100% height=auto style="filter:brightness(1.5); ">
+			</div>
+			<!-- drop down menu for page theme selector -->
+			<div class="dropdown1">
+				<button class="dropbtn">PAGE THEME</button>
+				<div class="dropdown-content">
+					<a href="#WINE" style='background-color:#E9BFCF; color:black;' class='drpopt' onclick='bgfunction1()' value='s1' onchange="set_input_value()" >CREPE</a>
+					<a href="#DENIM" style='background-color:#DAF8F9; color:black;' class='drpopt' onclick='bgfunction2()' value='s2' onchange="set_input_value()">FROST</a>
+					<a href="#MINT" style='background-color:#97F4D7; color:black;' class='drpopt' onclick='bgfunction3()' value='s3' onchange="set_input_value()">MINT</a>
+					<a href="#CLOUD" style='background-color:#DFDFDF; color:black;' class='drpopt' onclick='bgfunction4()' value='s4' onchange="set_input_value()">CLOUD</a>					
+					<a href="#CLOUD" style='background-color:#FFFFFF; color:black;' class='drpopt' onclick='bgfunction5()' value='s4' onchange="set_input_value()">WHITE</a>					
+					<a href="#SLATE" style='background-color:#F9F2DA; color:black;' class='drpopt' onclick='bgfunction6()' value='s5' onchange="set_input_value()">IVORY</a>
+					<a href="#SLATE" style='background-color:#FABFFF; color:black;' class='drpopt' onclick='bgfunction7()' value='s5' onchange="set_input_value()">LAVENDAR</a>
+					<a href="#SLATE" style='background-color:transparent; color:black;' class='drpopt' onclick='bgfunction8()' value='s5' onchange="set_input_value()">DEFAULT</a>
+				</div>
+			</div>
+			<!-- drop down menu for page text color selector -->
+			<div class="dropdown2">
+				<button class="dropbtn">PAGE TEXT COLOUR</button>
+				<div class="dropdown-content">
+					<a href="#white" style='background-color:#ffffff;' id='drpopt6' onclick='txtfunction6()'  ></a>
+					<a href="#blue" style='background-color:#08e8de;' id='drpopt7' onclick='txtfunction7()'  ></a>
+					<a href="#WINE" style='background-color:#890000;' id='drpopt1' onclick='txtfunction1()' ></a>
+					<a href="#DENIM" style='background-color:#174052;' id='drpopt2' onclick='txtfunction2()' ></a>
+					<a href="#PINE" style='background-color:#00570A;' id='drpopt3' onclick='txtfunction3()' ></a>
+					<a href="#CLOUD" style='background-color:#4A2501;' id='drpopt4' onclick='txtfunction4()' ></a>
+					<a href="#SLATE" style='background-color:#000000;' id='drpopt5' onclick='txtfunction5()' ></a>
+				</div>
+			</div>
+
+			<!-- social icons on the right bottom -->
+			<img src='logoac.png' id='logog1'>
+			<div id='svglineh'>
+				<svg height="310" width="500">
+				  <line x1="0" y1="0" x2="120" y2="0" style="stroke:#08e8de;stroke-width:4" />
+				  Sorry, your browser does not support inline SVG.
+				</svg>
+			</div>
+			
+			<div id='socialbutton1h'>
+				<a href='https://www.facebook.com/' target='blank'>
+					<img src='facebooksvg.svg' class='socialbuttonpic'/>
+				</a>
+			</div>
+			
+			
+			<div id='socialbutton2h'>
+				<a href='https://www.youtube.com/' target='blank'>
+					<img src='youtubesvg.svg' class='socialbuttonpic'/>
+				</a>
+			</div>
+			
+			<div id='socialbutton3h'>
+				<a href='https://www.twitter.com/' target='blank'>
+					<img src='twittersvg.svg' class='socialbuttonpic'/>
+				</a>
+			</div>
+
+			<div id='socialbutton4h'>
+				<a href='https://www.instagram.com/' target='blank'>
+					<img src='instagramsvg.svg' class='socialbuttonpic'/>
+				</a>
+			</div>
+			
+			<div id='socialbutton6h'>
+				<img src='top.svg' class='socialbuttonpic' onclick="goToTop()" style="width:30px; height:auto;"/><br>GO TO TOP
+			</div>
+			
+			<div id='bg'>
+
+			</div>
+			<!-- header of the page -->
+			<div id='gllryhd1' class="galleryHead" style="text-align: left; font-size: 60px; top: 5px;left: 90px; font-family: 'Agency FB';width: 200px">GALLERY</div>
+			<div id='bgcontent'>
+				<div id='gllryhd'>MUSIC ARTISTS</div>
+
+				<div id='svglinegllry'>
+					<svg height="210" width="500">
+					  <line x1="0" y1="0" x2="130" y2="0" style="stroke:#08e8de;stroke-width:5" />
+					  Sorry, your browser does not support inline SVG.
+					</svg>
+				</div>
+
+
+				<!-- biggger image showing div -->
+
+				<div id='bigpicdiv1' class='bigpicdivcls'><img src='eminem2.jpg' class='bigpic' ></div>
+				<div id='bigpicdiv2' class='bigpicdivcls'><img src='eminem1.jpg' class='bigpic'></div>
+				<div id='bigpicdiv3' class='bigpicdivcls'><img src='halsey3.jpg' class='bigpic'></div>
+				<div id='bigpicdiv4' class='bigpicdivcls'><img src='halsey2.jpg' class='bigpic'></div>
+				<div id='bigpicdiv5' class='bigpicdivcls'><img src='halsey5.jpg' class='bigpic'></div>
+				<div id='bigpicdiv6' class='bigpicdivcls'><img src='bruno1.jpg' class='bigpic'></div>
+				<div id='bigpicdiv7' class='bigpicdivcls'><img src='bruno2.jpg' class='bigpic'></div>
+				<div id='bigpicdiv9' class='bigpicdivcls'><img src='beyonce2.jpg' class='bigpic'></div>
+				<div id='bigpicdiv10' class='bigpicdivcls'><img src='tupac3.jpg' class='bigpic'></div>
+				<div id='bigpicdiv11' class='bigpicdivcls'><img src='tupac2.jpg' class='bigpic'></div>
+				<div id='bigpicdiv13' class='bigpicdivcls'><img src='sia2.jpg' class='bigpic'></div>
+				<div id='bigpicdiv12' class='bigpicdivcls'><img src='sia3.jpg' class='bigpic'></div>
+				
+				<div id='picdiscrptn'></div>
+				
+				<div id='picdiscrptndiv'></div>
+				<!-- the discription of the images -->
+				<div id='picdiscrptntxtdiv'>
+					<div id='picdiscrptntxt1' class='picdiscrptntxt'><span >EMINEM</span><br><br>Marshall Bruce Mathers III, known professionally as Eminem, is an American rapper, songwriter, record producer and record executive. He is one of the most successful musical artists of the 21st century. In addition to his solo career, Eminem was a member of the hip hop group D12.<br>-wikipedia-</div>
+					<div id='picdiscrptntxt2' class='picdiscrptntxt'><span >EMINEM</span><br><br>Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem (/ˌɛmɪˈnɛm/; often stylized as EMINƎM), is an American rapper, songwriter, record producer, record executive and actor. He is one of the most successful musical artists of the 21st century.<br>-wikipedia-</div>
+					<div id='picdiscrptntxt3' class='picdiscrptntxt'><span >HALSEY</span><br><br>Ashley Nicolette Frangipane, known professionally as Halsey, is an American singer and songwriter. Gaining attention from self-released music on social media platforms, she was signed by Astralwerks in 2014 and released her debut EP, Room 93, later that year.<br>-wikipedia- </div>
+					<div id='picdiscrptntxt4' class='picdiscrptntxt'><span >HALSEY</span><br><br>Halsey was born and raised in Clark, New Jersey as Ashley Nicolette Frangipane. She is of Italian, Hungarian, and Irish descent on her mother's side and African-American on her father's side. ... In one of her first interviews, Halsey stated she was diagnosed with bipolar disorder around the age of 16 or 17.<br>-wikipedia-</div>
+					<div id='picdiscrptntxt5' class='picdiscrptntxt'><span >HALSEY</span><br><br>Halsey is noted for her distinctive singing voice.Her awards and nominations include four Billboard Music Awards, one American Music Award, three Guinness World Records, an MTV Video Music Award and two Grammy Award nominations. Outside of her career, she has been involved in suicide prevention awareness and sexual assault victim advocacy.<br>-wikipedia- </div>
+					<div id='picdiscrptntxt6' class='picdiscrptntxt'><span >BRUNO MARS</span><br><br>Peter Gene Hernandez, known professionally as Bruno Mars, is an American singer, songwriter, record producer, multi-instrumentalist, and dancer. He is known for his stage performances in a wide range of musical styles, including Pop, R&B, funk, soul, reggae, hip hop, and rock.<br>-wikipedia- </div>
+					<div id='picdiscrptntxt7' class='picdiscrptntxt'><span >BRUNO MARS</span><br><br>Born Peter Gene Hernandez on October 8, 1985, in Honolulu, Hawaii, popular singer-songwriter Bruno Mars grew up in a very musical family. His father, Pete, was a Latin percussionist from Brooklyn, and his mother, Bernadette ("Bernie"), was a singer. Mars received his nickname, "Bruno," while he was still a baby.<br>-wikipedia- </div>
+					<div id='picdiscrptntxt9' class='picdiscrptntxt'><span >BEYONCÉ</span><br><br>Beyoncé Giselle Knowles-Carter is an American singer, songwriter, record producer, and actress. Born and raised in Houston, Texas, Beyoncé performed in various singing and dancing competitions as a child.<br>-wikipedia-</div>
+					<div id='picdiscrptntxt10' class='picdiscrptntxt'><span >TUPAC SHAKUR</span><br><br>Tupac Amaru Shakur, popularly known by his stage name 2Pac, was an American rapper and actor. He is considered by many as one of the most significant rappers of all time.<br>-wikipedia- </div>
+					<div id='picdiscrptntxt11' class='picdiscrptntxt'><span >TUPAC SHAKUR</span><br><br>Tupac Amaru Shakur (/ˈtuːpɑːk ʃəˈkʊər/ TOO-pahk shə-KOOR; born Lesane Parish Crooks, June 16, 1971 – September 13, 1996), popularly known by his stage name 2Pac, was an American rapper and actor. He is considered by many as one of the most significant rappers of all time.<br>-wikipedia-</div>
+					<div id='picdiscrptntxt12' class='picdiscrptntxt'><span >SIA</span><br><br>Sia Kate Isobelle Furler is an Australian singer, songwriter, voice actress and music video director. She started her career as a singer in the acid jazz band Crisp in the mid-1990s in Adelaide. In 1997, when Crisp disbanded, she released her debut studio album titled OnlySee in Australia.<br>-wikipedia-</div>
+					<div id='picdiscrptntxt13' class='picdiscrptntxt'><span >SIA</span><br><br>Sia Kate Isobelle Furler (/ˈsiːə/ SEE-ə; born 18 December 1975) is an Australian singer, songwriter, voice actress and music video director. She started her career as a singer in the acid jazz band Crisp in the mid-1990s in Adelaide. ... Since then, Sia has usually worn a wig that obscures her face to protect her privacy.<br>-wikipedia-</div>
+				</div>
+
+				<!-- thumbnail images-->
+				<img src='eminem2.jpg'  id='bgimg1' onclick="pictobig('bigpicdiv1'); txttobig('picdiscrptntxt1');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='eminem1.jpg' id='bgimg2' onclick="pictobig('bigpicdiv2'); txttobig('picdiscrptntxt2');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='halsey3.jpg' id='bgimg3' onclick="pictobig('bigpicdiv3'); txttobig('picdiscrptntxt3');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='halsey2.jpg' id='bgimg4' onclick="pictobig('bigpicdiv4'); txttobig('picdiscrptntxt4');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='halsey5.jpg' id='bgimg5' onclick="pictobig('bigpicdiv5'); txttobig('picdiscrptntxt5');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='bruno1.jpg' id='bgimg6' onclick="pictobig('bigpicdiv6'); txttobig('picdiscrptntxt6');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='bruno2.jpg' id='bgimg7' onclick="pictobig('bigpicdiv7'); txttobig('picdiscrptntxt7');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='beyonce2.jpg' id='bgimg9' onclick="pictobig('bigpicdiv9'); txttobig('picdiscrptntxt9');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='tupac3.jpg' id='bgimg10' onclick="pictobig('bigpicdiv10'); txttobig('picdiscrptntxt10');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='tupac2.jpg' id='bgimg11' onclick="pictobig('bigpicdiv11'); txttobig('picdiscrptntxt11');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='sia3.jpg' id='bgimg12' onclick="pictobig('bigpicdiv12'); txttobig('picdiscrptntxt12');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+				<img src='sia2.jpg' id='bgimg13' onclick="pictobig('bigpicdiv13'); txttobig('picdiscrptntxt13');" class='bgimg' onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+			</div>
+			<div id="imgdivback"></div>
+			<div id='menu'>
+				<!-- navigation bar-->
+				<a href="HOME.html"><img src='skulllogo.png' id='menulogo'/></a>
+				<img src='acousto.png' id='acstlogo'/>
+				<img src='x.png' id='xlogo'/>
+				<ul>
+					<li class='mnu'><a href="HOME.html">HOME</a></li>
+					<li class='mnu'><a href="cart_kavindu.html">STORE</a></li>
+					<li class='actvmnu'><a href="GALLERY.html">GALLERY</a></li>
+					<li class='mnu'><a href="SITEMAP.html" >SITEMAP</a></li>
+					<li class='mnu'><a href="ARTISTS.html" >ARTISTS</a></li>
+					<li class='mnu'><a href="ABOUT.html" >ABOUT</a></li>
+				</ul>
+			</div>
+			<!-- footer section start -->
+			<div class="footer" style="top: 2000px">
+				<div class="footerLeft">
+					<img src="logoac.png" style="height: 90px; width: auto; margin-top: 50px;margin-left: 90px">
+					<p class="slogan" >THIS SITE BRINGS ARTIST, FANS AND VENUES TOGETHER,
+						FROM ALL OVER THE WORLD WITH ONE MAIN VISION TO PROMOTE MUSIC</p>
+
+						<p class="footerEditor" >
+						PAGE EDITOR</p>
+						<a href="Nabeel_Shanaz.html" class="footerLinkEd" class="footerLink" >
+							Nabeel Shanaz
+						</a>
+
+				</div>
+				<div class="footerMiddle">
+					<table class="footerTable">
+						<tr><th class="footerTH">EXPLORE</th><th class="footerTH"> VISIT</th><th class="footerTH"> FOLLOW</th></tr>
+						<tr><td class="footerTD"><a href="HOME.html" class="footerLink"> HOME</a></td><td class="footerTD"> No.27 1ST Ln,</td><td class="footerTD" class="footerLink"> INSTAGRAM</td></tr>
+						<tr><td class="footerTD"><a href="store_kavindu.html" class="footerLink"> STORE</a></td><td class="footerTD"> PIRIVENA RD,</td><td class="footerTD" class="footerLink"> TWITTER</td></tr>
+						<tr><td class="footerTD"><a href="GALLERY.html" class="footerLink"> GALLERY</a></td><td class="footerTD"> RATMALANA</td><td class="footerTD" class="footerLink"> YOUTUBE</td></tr>
+						<tr><td class="footerTD"><a href="SITEMAP.html" class="footerLink"> SITEMAP</a></td><td class="footerTD"> </td><td class="footerTD" class="footerLink"> FACEBOOK</td></tr>
+						<tr><td class="footerTD"><a href="ARTISTS.html" class="footerLink"> ARTISTS</a></td><td class="footerTD"> </td><td class="footerTD" class="footerLink"> </td></tr>
+						<tr><td class="footerTD"><a href="ABOUT.html" class="footerLink"> ABOUT</a></td><td class="footerTD"> </td><td class="footerTD" class="footerLink"> </td></tr>
+					</table>
+				</div>
+
+			</div>
+		</div>
+
+		<script>
+			
+			function bgfunction1() {
+				document.getElementById("bg").style.background = "#E9BFCF";
+				document.getElementById("bigpicdiv").style.background = "#E9BFCF";
+				document.getElementById("picdiscrptndiv").style.background = "#E9BFCF";
+			}
+			function bgfunction2() {
+				document.getElementById("bg").style.background = "#DAF8F9";
+				document.getElementById("bigpicdiv").style.background = "#DAF8F9";
+				document.getElementById("picdiscrptndiv").style.background = "#DAF8F9";
+			}
+			function bgfunction3() {
+				document.getElementById("bg").style.background = "#97F4D7";
+				document.getElementById("bigpicdiv").style.background = "#97F4D7";
+				document.getElementById("picdiscrptndiv").style.background = "#97F4D7";
+			}
+			function bgfunction4() {
+				document.getElementById("bg").style.background = "#DFDFDF";
+				document.getElementById("bigpicdiv").style.background = "#DFDFDF";
+				document.getElementById("picdiscrptndiv").style.background = "#DFDFDF";
+			}
+			function bgfunction5() {
+				document.getElementById("bg").style.background = "#FFFFFF";
+				document.getElementById("bigpicdiv").style.background = "#FFFFFF";
+				document.getElementById("picdiscrptndiv").style.background = "#FFFFFF";
+			}
+			function bgfunction6() {
+				document.getElementById("bg").style.background = "#F9F2DA";
+				document.getElementById("bigpicdiv").style.background = "#F9F2DA";
+				document.getElementById("picdiscrptndiv").style.background = "#F9F2DA";
+			}
+			function bgfunction7() {
+				document.getElementById("bg").style.background = "#FABFFF";
+				document.getElementById("bigpicdiv").style.background = "#FABFFF";
+				document.getElementById("picdiscrptndiv").style.background = "#FABFFF";
+			}
+			function bgfunction8() {
+				document.getElementById("bg").style.background = "transparent";
+				document.getElementById("bigpicdiv").style.background = "transparent";
+				document.getElementById("picdiscrptndiv").style.background = "black";
+				document.getElementById("gllryhd").style.color = "#08e8de";
+			}
+			
+			
+			
+
+			function txtfunction1() {
+				document.getElementById("gllryhd").style.color = "#890000";
+				for (i=0;i<13;i++){
+					document.getElementsByClassName("picdiscrptntxt")[i].style.color = "#890000";
+				}
+			}
+			function txtfunction2() {
+				document.getElementById("gllryhd").style.color = "#174052";
+				for (i=0;i<13;i++){
+					document.getElementsByClassName("picdiscrptntxt")[i].style.color = "#174052";
+				}
+			}
+			function txtfunction3() {
+				document.getElementById("gllryhd").style.color = "#00570A";
+				for (i=0;i<13;i++){
+					document.getElementsByClassName("picdiscrptntxt")[i].style.color = "#00570A";
+				}
+			}
+			function txtfunction4() {
+				document.getElementById("gllryhd").style.color = "#4A2501";
+				for (i=0;i<13;i++){
+					document.getElementsByClassName("picdiscrptntxt")[i].style.color = "#4A2501";
+				}
+			}
+			function txtfunction5() {
+				document.getElementById("gllryhd").style.color = "#000000";
+				for (i=0;i<13;i++){
+					document.getElementsByClassName("picdiscrptntxt")[i].style.color = "#000000";
+				}
+			}
+			function txtfunction6() {
+				document.getElementById("gllryhd").style.color = "#ffffff";
+				for (i=0;i<13;i++){
+					document.getElementsByClassName("picdiscrptntxt")[i].style.color = "#ffffff";
+				}
+			}
+			function txtfunction7() {
+				document.getElementById("gllryhd").style.color = "#08e8de";
+				for (i=0;i<13;i++){
+					document.getElementsByClassName("picdiscrptntxt")[i].style.color = "#08e8de";
+				}
+			}
+			
+			window.onload = function(){
+				var elems = document.getElementsByClassName('bigpicdivcls');
+				for (var i=1;i<elems.length;i+=1){
+				  elems[i].style.display = 'none';
+				}
+				var elems = document.getElementsByClassName('picdiscrptntxt');
+				for (var i=1;i<elems.length;i+=1){
+				  elems[i].style.display = 'none';
+				}
+			};
+			
+	
+			
+			function pictobig(bigpicdiv1) {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+				var elems1 = document.getElementsByClassName('bigpicdivcls');
+				for (var i=0;i<elems1.length;i+=1){
+				  elems1[i].style.display = 'none';
+				}
+				document.getElementById(bigpicdiv1).style.display = 'block';
+			}
+			
+			function txttobig(picdiscrptntxt1) {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+				var elems2 = document.getElementsByClassName('picdiscrptntxt');
+				for (var n=0;n<elems2.length;n+=1){
+				  elems2[n].style.display = 'none';
+				}
+				document.getElementById(picdiscrptntxt1).style.display = 'block';
+			}
+			
+			
+			
+			function bigImg(x) {
+				var img = document.getElementsByClassName('bgimg'); 
+				var width = img.clientWidth;
+				var height = img.clientHeight;
+				x.style.height = (height + 15) + "px";
+				x.style.width = (width + 15) + "px";
+			}
+
+			function normalImg(x) {
+				x.style.height = height;
+				x.style.width = width;
+			}
+			
+			function goToTop() {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+	
+
+			
+		</script>
+	</form>
+
+</body>
+</html>

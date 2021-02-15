@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('home\ pic\ 2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    ;
+}
+
+.topic {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
+    background-color: #AEB6BF;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    font-family: "Lucida Console", Monospace;
+}
+
+.fontAdjust {
+    width: 16%;
+    float: right;
+    height: 100%;
+    margin-top: -75px;
+    margin-right: 20px;
+}
+
+.saleContainer {
+    width: 60%;
+    height: 300px;
+    background-color: D7E4E3;
+    margin-left: 5%;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+
+.saleImage {
+    height: 298px;
+    width: 35%;
+    margin-top: 5px;
+}
+
+div.saleImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.saleDetail {
+    width: 60%;
+    height: 40%;
+    float: right;
+    font-family: "Trebuchet MS", Sans-serif;
+    background-color: #08e8de;
+    margin-top: -25%;
+    margin-right: 20px;
+}
+
+.saleQuantity {
+    width: 35%;
+    height: 15%;
+    font-family: "Trebuchet MS", Sans-serif;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: -8%;
+    margin-left: 45%;
+    text-align: center;
+}
+
+.saleInput {
+    width: 10%;
+    height: 15%;
+    margin-top: -8%;
+    float: right;
+    margin-right: 20px;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    background-color: #08e8de;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4c494e;
+    color: white;
+}
+
+.formStyle {
+    position: fixed;
+    width: 25%;
+    border-radius: 5px;
+    background-color: #bdbdbd;
+    padding: 20px;
+    right: 0px;
+}
+
+table {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}

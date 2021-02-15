@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <title>Send Us Your Feedback</title>
+    <script src="external.js"></script>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="csscw.css">
+</head>
+<body>
+    <div id='menu'>
+        <input type='button' id='loginbtn' value='LOGIN' >
+        <a href="HOME.html"><img src='skulllogo.png' id='menulogo' alt="Website's logo"/></a>
+        <img src='acousto.png' id='acstlogo' alt="Majority of logo text"/>
+        <img src='x.png' id='xlogo' alt="Last but of logo text"/>
+        <ul>
+            <li class='mnu'><a href="HOME.html">HOME</a></li>
+            <li class='mnu'><a href="cart_kavindu.html">STORE</a></li>
+            <li class='mnu'><a href="GALLERY.html">GALLERY</a></li>
+            <li class='mnu'><a href="SITEMAP.html" >SITEMAP</a></li>
+            <li class='mnu'><a href="ARTISTS.html" >ARTISTS</a></li>
+            <li class='mnu'><a href="ABOUT.html" >ABOUT</a></li>
+        </ul>
+    </div>
+    <div id='svgline'>
+        <svg height="210" width="500">
+          <line x1="0" y1="0" x2="0" y2="130" style="stroke:#08e8de;stroke-width:4" />
+          Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+
+        
+    <div id='socialbutton1'>
+        <a href='https://www.facebook.com/' target='blank'>
+            <img alt="facebook_svg" src='facebooksvg.svg' class='socialbuttonpic'/>
+        </a>
+    </div>
+    
+    
+    <div id='socialbutton2'>
+        <a href='https://www.youtube.com/' target='blank'>
+            <img alt="youtube_svg" src='youtubesvg.svg' class='socialbuttonpic'/>
+        </a>
+    </div>
+    
+    <div id='socialbutton3'>
+        <a href='https://www.twitter.com/' target='blank'>
+            <img alt="twitter_svg" src='twittersvg.svg' class='socialbuttonpic'/>
+        </a>
+    </div>
+
+    <div id='socialbutton4'>
+        <a href='https://www.instagram.com/' target='blank'>
+            <img alt="instagram_svg" src='instagramsvg.svg' class='socialbuttonpic'/>
+        </a>
+    </div>
+    
+    <div id='socialbutton6'>
+        <span onclick="goToTop()">GO TO TOP</span>
+    </div>
+	<div id='a' >
+		<img src='home pic 2.jpg' width=100% height=auto alt="background image of website" >
+	</div>
+    <main> 
+    <div class="wrap">
+    <h1 id = "formheading">Send us Your feedback!</h1>
+    <div id= "myform">
+        <div id = "error"></div>
+    <form class="subform" onsubmit="return CheckFormInputs()">
+        <p class="userguide"><span id = "highlighted">*</span> Indicates a required field.</p>
+        <div class="entries">
+            <label class = "myformlabels" for="name">Name<span id = "highlighted">*</span></label>
+            <input class = "inputfield" type="text" id="name" name ="name" placeholder="Your full name" class="divbgcolor"/>   
+        </div>
+        <div class="entries">
+            <label class = "myformlabels" for="email">Email</label>
+            <input class = "inputfield" type="text" id="email" name ="email" class="divbgcolor"/>
+        </div>
+        <div class="entries">
+            <label class = "myformlabels" for="phone">Phone No.</label>
+            <input class = "inputfield" type="text" id="phone" name ="phone" class="divbgcolor"/>
+        </div>
+        <div class="entries" id = "usercomments">
+            <label class = "myformlabels" for="comm">Comments:</label>
+            <textarea class = "inputfield" name="comm" id="comm" placeholder="How was your experience?" rows = "8" cols = "50" class="divbgcolor"></textarea> 
+        </div>
+        <div class="entries">
+            <label class = "myformlabels" for="rating"> Rate your experience<span id = "highlighted">*</span> </label>
+            <select id="rating">
+                <option hidden disabled selected value="0"> -- select an option -- </option>
+                <option value="1"> Poor </option>
+                <option value="2"> Satisfactory </option>
+                <option value="3"> Excellent </option>
+            </select>
+        </div>
+        <div class="entries">
+            <button type="submit" name="subbut" id="subbut">SUBMIT</button>  
+        </div>
+        
+        
+         
+        
+    </form>
+    </div>
+    </div>
+</main>
+    
+</body>
+</html>
